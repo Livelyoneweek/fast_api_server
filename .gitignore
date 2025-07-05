@@ -1,0 +1,83 @@
+# ────────────────────────────────
+# Python basic
+# ────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.log
+
+# env (uv, venv, virtualenv)
+.venv/
+env/
+venv/
+
+# dependency
+.uv/
+
+# test, type check
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ────────────────────────────────
+# ide
+# ────────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+# Cursor
+.cursor/
+
+# ────────────────────────────────
+# os
+# ────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ────────────────────────────────
+# env
+# ────────────────────────────────
+.env
+.env.*
+
+# ────────────────────────────────
+# db
+# ────────────────────────────────
+*.sqlite3
+*.db
+alembic/versions/*.pyc
+
+# ────────────────────────────────
+# Docker 
+# ────────────────────────────────
+
+docker/postgres/db_data/
+docker/**/db_data/
+**/docker-logs/
+**/*.pid
+
+# ────────────────────────────────
+# build
+# ────────────────────────────────
+dist/
+build/
+*.tar.gz
+*.whl
+
+# ────────────────────────────────
+# etc
+# ────────────────────────────────
+# vscode launch
+*.launch
+# macOS 
+*.swp
