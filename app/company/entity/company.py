@@ -1,7 +1,7 @@
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from sqlalchemy import String
 
-class Base(DeclarativeBase):  # 각 모듈에서 공통 상속
+class Base(DeclarativeBase):
     pass
 
 class Company(Base):

@@ -1,6 +1,6 @@
-from app.company.dto import CompanyCreate, CompanyRead
-from app.company.entity import Company
-from app.company.repository import CompanyRepository
+from app.company.dto.company_dto import CompanyCreate, CompanyRead
+from app.company.entity.company import Company
+from app.company.repository.company_repository import CompanyRepository
 
 class CompanyService:
     def __init__(self, repo: CompanyRepository):

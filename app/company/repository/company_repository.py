@@ -1,6 +1,6 @@
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-from app.company.entity import Company
+from app.company.entity.company import Company
 
 class CompanyRepository:
     def __init__(self, session: AsyncSession):

@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.database import get_session
-from app.company.service import CompanyService
-from app.company.repository import CompanyRepository
-from app.company.dto import CompanyCreate, CompanyRead
+from app.company.service.company_service import CompanyService
+from app.company.repository.company_repository import CompanyRepository
+from app.company.dto.company_dto import CompanyCreate, CompanyRead
 
 router = APIRouter(prefix="/companies", tags=["Company"])
 
