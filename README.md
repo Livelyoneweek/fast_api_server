@@ -34,9 +34,12 @@ fastapi-demo/
 │       │   └─ company_controller.py   # Router
 │       ├─ service/
 │       │   └─ company_service.py      # 비즈니스 로직
-│       ├─ repository.py               # DB 접근
-│       ├─ entity.py                   # SQLAlchemy 모델
-│       └─ dto.py                      # Pydantic DTO
+│       ├─ repository/
+│       │   └─  company_repository.py  # DB 접근
+│       ├─ entity/
+│       │   └─ entity.py               # SQLAlchemy 모델
+│       ├─ dto/
+│       └─  └─ dto.py                  # Pydantic DTO
 │
 └─ alembic/            # DB 마이그레이션
     ├─ env.py
