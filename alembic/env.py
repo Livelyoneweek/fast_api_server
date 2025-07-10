@@ -6,11 +6,11 @@ from sqlalchemy.engine.url import make_url
 
 from alembic import context
 
-from app.core.config import get_settings
+from app.core.config import settings
 from app.company.entity import Base
 
-settings = get_settings()
-sync_url = make_url(settings.db_url)
+
+sync_url = make_url(settings.db_url())
 sync_url = sync_url.set(drivername="postgresql+psycopg")
 sync_engine = create_engine(sync_url, poolclass=pool.NullPool)
 
